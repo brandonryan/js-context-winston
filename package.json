@@ -1,0 +1,18 @@
+{
+  "name": "js-context-winston",
+  "version": "0.1.0",
+  "type": "module",
+  "keywords": [
+    "js-context",
+    "winston",
+    "ctx",
+    "logger"
+  ],
+  "description": "js-context winston module",
+  "main": "index.js",
+  "author": "Brandon Ryan",
+  "license": "MIT",
+  "dependencies": {
+    "js-context": "^0.2.0"
+  }
+}
