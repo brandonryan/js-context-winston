@@ -11,7 +11,7 @@ export function withLogger(ctx, logger) {
     const builder = new ContextBuilder()
 
     //add our logger
-    builder.withValue(loggerSym, logger)
+    builder.with(loggerSym, logger)
 
     //add the 'log' function
     builder.withCtxFunction('log', (ctx, ...args) => {
@@ -28,4 +28,12 @@ export function withLogger(ctx, logger) {
     }
 
     return builder.build(ctx)
+}
+
+function getLogger(ctx) {
+    const logger = ctx[loggerSym]
+    if(!logger) {
+        throw new Error("Winston logger not defined on context")
+    }
+    return logger
 }

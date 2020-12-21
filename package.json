@@ -13,6 +13,6 @@
   "author": "Brandon Ryan",
   "license": "MIT",
   "dependencies": {
-    "js-context": "^0.2.0"
+    "js-context": "^0.3.0"
   }
 }
