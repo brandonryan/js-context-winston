@@ -2,7 +2,7 @@
 # yarn lockfile v1
 
 
-js-context@^0.3.0:
-  version "0.3.0"
-  resolved "https://registry.yarnpkg.com/js-context/-/js-context-0.3.0.tgz#13d5e70a02ab5cb88bdd94f42dbeec61af761723"
-  integrity sha512-tbS3qaeBpsD6efVzRZA1/ShCJNxHJzovQ3iLld5JxgekuH4oq8OEFusaj3qdoC9d/nWRfdSvGqC605UpK8Jfcg==
+js-context@^0.5.0:
+  version "0.5.0"
+  resolved "https://registry.yarnpkg.com/js-context/-/js-context-0.5.0.tgz#63b3aa27b8b920486fe387d28417746f03bdfb62"
+  integrity sha512-Mk9VEnPpfk+92HfuDg0ZTIQolf6oP+4gOJmzqpObkDjmbIgNEX9d053spB1QMOX8ItLnZ+tnASlgYJZ1qJ3e+g==
