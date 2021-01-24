@@ -1,6 +1,6 @@
 import {Context, ContextBuilder} from "js-context"
 
-const loggerSym = new Symbol("winston-logger")
+const loggerSym = Symbol("winston-logger")
 /**
  * adds winston log functions to context, adding context values to the log
  * i.e. ctx.info("message goes here")
