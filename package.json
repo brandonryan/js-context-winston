@@ -8,11 +8,13 @@
     "ctx",
     "logger"
   ],
+  "repository": "https://github.com/brandonryan/js-context-winston",
   "description": "js-context winston module",
   "main": "index.js",
   "author": "Brandon Ryan",
   "license": "MIT",
-  "dependencies": {
-    "js-context": "^0.6.1"
+  "dependencies": {},
+  "peerDependencies": {
+    "js-context": "^0.7.0"
   }
 }
