@@ -15,19 +15,33 @@ export function withLogger(ctx, logger) {
 
     //add the 'log' function
     builder.withCtxFunction('log', (ctx, ...args) => {
-        const logger = getLogger(ctx).child(ctx)
+        const obj = buildCtxLogObject(ctx)
+        const logger = getLogger(ctx).child(obj)
         logger.log(...args)
     })
 
     //add any custom levels/default levels
     for(const level in logger.levels) {
         builder.withCtxFunction(level, (ctx, ...args) => {
-            const logger = getLogger(ctx).child(ctx)
+            const obj = buildCtxLogObject(ctx)
+            const logger = getLogger(ctx).child(obj)
             logger[level](...args)
         })
     }
 
     return builder.build(ctx)
+}
+
+function buildCtxLogObject(ctx) {
+    const val = {}
+    for(const key in ctx) {
+        if(ctx[key] instanceof Context) {
+            Object.assign(val, buildContextLogObject(ctx[key]))
+        } else {
+            val[key] = ctx[key]
+        }
+    }
+    return val
 }
 
 function getLogger(ctx) {

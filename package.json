@@ -15,6 +15,7 @@
   "license": "MIT",
   "dependencies": {},
   "peerDependencies": {
-    "js-context": "^0.7.0"
+    "js-context": ">=0.7.1",
+    "winston": "^3.3.3"
   }
 }
