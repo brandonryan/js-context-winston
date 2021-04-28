@@ -36,7 +36,7 @@ function buildCtxLogObject(ctx) {
     const val = {}
     for(const key in ctx) {
         if(ctx[key] instanceof Context) {
-            ctx[key] = buildCtxLogObject(ctx[key])
+            val[key] = buildCtxLogObject(ctx[key])
         } else {
             val[key] = ctx[key]
         }
